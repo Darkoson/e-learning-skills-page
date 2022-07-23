@@ -1,0 +1,134 @@
+:root{
+    --color-purple: #666CA3 ;
+    --color-pink: #FFA7C3 ;
+    --color-pinkdeep: #F74780 ;
+    --color-bluedeep: #13183F ;
+    --color-gray: #83869A;
+    --color-white: #FFFFFF ;
+
+    --color-grad1: 180deg,#FF6F48 0.04%,#F02AA6 100%;
+    --color-grad1-hover : 180deg,#FF6F48 54%,#F02AA6 50%;
+    --color-grad2: 180deg,#4851FF 0%, #F02AA6 99.92%;
+    --color-grad2-hover: 180deg,#4851DD 0%, #F02AFF 99.92%;
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+
+header,
+main,
+footer {
+    width: 100%;
+    /* padding: 0px 10rem; */
+}
+
+header {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0px;
+}
+
+.hero-welcome {
+    width: 350px;
+}
+
+.hero-btn,
+.hero-text,
+.hero-description {
+    margin-top: 20px;
+}
+
+.hero-image {
+    width: 450px;
+    position: absolute;
+    left: 75%;
+    top: -40px;
+}
+
+section {
+    padding: 10rem auto;
+    width: 100%;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+}
+
+.courses {
+    margin: 3rem auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 0px 1rem 3rem 1rem;
+}
+
+.course {
+    background-color: rgb(140, 183, 240);
+    position: relative;
+    border-radius: 5px;
+    padding: 3rem 0.5rem;
+
+}
+
+.course-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -1.5rem;
+    left: 1.5rem;
+}
+
+.course-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.course-description {
+    padding: 1.5rem 0rem;
+}
+
+.course-getstarted {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 450px) {
+    .courses {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1rem;
+    }
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+    .courses {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+
